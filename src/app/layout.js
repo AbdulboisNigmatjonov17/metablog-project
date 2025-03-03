@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import React, { useState } from "react";
+import { ThemeProvider } from "../context/ThemeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,17 +25,21 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased Container`}
-      >
-        <Navbar setData={setData} />
-        <main>
-        {React.Children.map(children, (child) =>
-            React.isValidElement(child) ? React.cloneElement(child, { data }) : child
-          )}
-        </main>
-        {/* <Footer /> */}
-      </body>
+      <ThemeProvider>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <nav className="Container">
+            <Navbar setData={setData} />
+          </nav>
+          <main className="Container">
+            {React.Children.map(children, (child) =>
+              React.isValidElement(child) ? React.cloneElement(child, { data }) : child
+            )}
+          </main>
+          {/* <Footer /> */}
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

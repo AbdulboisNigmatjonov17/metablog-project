@@ -22,7 +22,49 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-.Container{
+
+body.light {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+
+.Container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.toggle-btn {
+  width: 60px;
+  height: 30px;
+  background: #E8E8EA;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  transition: 0.3s;
+}
+.toggle-btn.dark{
+  background: #4B6BFB;
+}
+
+.toggle-circle {
+  height: full;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  transition: 0.3s;
+}
+
+.toggle-circle.dark {
+  left: 30px;
 }

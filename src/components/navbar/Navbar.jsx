@@ -1,8 +1,10 @@
 "use client"
 import Link from 'next/link'
 import Search from '../search/Input'
+import { useTheme } from '@/context/ThemeContext';
 
 export default function Navbar({ setData }) {
+    const { theme, toggleTheme } = useTheme();
     return (
         <header className='h-[10dvh] items-center w-full flex justify-between'>
             <div>
@@ -21,9 +23,9 @@ export default function Navbar({ setData }) {
                 <Link href={'/search'}>
                     <Search setData={setData} />
                 </Link>
-                <div>
-                    <img src="/Swich.svg" alt="swith-mode" />
-                </div>
+                <button onClick={toggleTheme} className={`toggle-btn ${theme === "dark" ? "dark" : ""} cursor-pointer`}>
+                    <img src="/Swich.png" alt="swith-mode" className={`toggle-circle ${theme === "dark" ? "dark" : ""}`}/>
+                </button>
             </div>
         </header>
     )
