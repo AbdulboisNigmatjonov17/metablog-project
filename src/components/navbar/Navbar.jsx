@@ -1,10 +1,8 @@
 "use client"
 import Link from 'next/link'
-import React, { useState } from 'react'
 import Search from '../search/Input'
 
-export default function Navbar() {
-    const [data, setData] = useState([]);
+export default function Navbar({ setData }) {
     return (
         <header className='h-[10dvh] items-center w-full flex justify-between'>
             <div>
@@ -21,10 +19,10 @@ export default function Navbar() {
             </ul>
             <div className='flex gap-10 items-center'>
                 <Link href={'/search'}>
-                    <Search setData={setData}/>
+                    <Search setData={setData} />
                 </Link>
                 <div>
-                    <img src="/Swich.svg" alt="" />
+                    <img src="/Swich.svg" alt="swith-mode" />
                 </div>
             </div>
         </header>
