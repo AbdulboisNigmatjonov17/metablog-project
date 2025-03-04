@@ -6,7 +6,7 @@ import Cards from '@/components/cards/Cards'
 
 export default function Home() {
   return (
-    <div>
+    <section>
       <Banner />
       <Ads />
       <h3 className='text-[#181A2A] font-bold text-2xl leading-7'>Latest Post</h3>
@@ -15,6 +15,6 @@ export default function Home() {
         <Button text={'View All Post'} />
       </div>
       <Ads />
-    </div>
+    </section>
   )
 }

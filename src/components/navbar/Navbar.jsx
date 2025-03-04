@@ -9,15 +9,15 @@ export default function Navbar({ setData }) {
         <header className='h-[10dvh] items-center w-full flex justify-between'>
             <div>
                 <Link href={'/'}>
-                {
-                    theme === "dark" ? <img src="/LogoDark.svg" alt="metablog-Logo" /> : <img src="/Logo.svg" alt="metablog-darkLogo" /> 
-                }
-                    
+                    {
+                        theme === "dark" ? <img src="/LogoDark.svg" alt="metablog-Logo" /> : <img src="/Logo.svg" alt="metablog-darkLogo" />
+                    }
+
                 </Link>
             </div>
             <ul className='flex gap-10'>
                 <li><Link href={'/'}>Home</Link></li>
-                <li>Blog</li>
+                <li><Link href={'/blog'}>Blog</Link></li>
                 <li>Single Post</li>
                 <li>Pages</li>
                 <li>Contact</li>
@@ -27,7 +27,7 @@ export default function Navbar({ setData }) {
                     <Search setData={setData} />
                 </Link>
                 <button onClick={toggleTheme} className={`toggle-btn ${theme === "dark" ? "dark" : ""} cursor-pointer`}>
-                    <img src="/Swich.png" alt="swith-mode" className={`toggle-circle ${theme === "dark" ? "dark" : ""}`}/>
+                    <img src="/Swich.png" alt="swith-mode" className={`toggle-circle ${theme === "dark" ? "dark" : ""}`} />
                 </button>
             </div>
         </header>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
- 
+import Text2 from '../text/Text2'
+
 
 export default function Card({ item }) {
     return (
@@ -9,8 +10,8 @@ export default function Card({ item }) {
                     <img src={`${item.img}`} alt={`card ${item.title}`} className='w-[360px] h-[240px] object-cover rounded-md' />
                 </div>
             </Link>
-            <div className='w-full h-full flex flex-col justify-between'>
-                <h3>Technolgy</h3>
+            <div className='w-full h-full flex flex-col justify-between items-start'>
+                <Text2 style={'text-[#4B6BFB] bg-[#4B6BFB0D]'}/>
                 <h2 className='text-[#181A2A] font-semibold text-2xl leading-7'>{item.title}</h2>
                 <div className='w-full flex items-center justify-between'>
                     <Link href={`/author/${item.user.name}`} className='flex items-center gap-3'>

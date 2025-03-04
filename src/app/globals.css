@@ -25,7 +25,6 @@ body {
 
 body.light {
   background-color: white;
-  /* color: black; */
   transition: 0.3s;
 }
 
@@ -53,7 +52,8 @@ body.dark {
   padding: 1px;
   transition: 0.3s;
 }
-.toggle-btn.dark{
+
+.toggle-btn.dark {
   background: #4B6BFB;
 }
 
@@ -67,4 +67,11 @@ body.dark {
 
 .toggle-circle.dark {
   left: 30px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
