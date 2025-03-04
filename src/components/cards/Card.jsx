@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+ 
 
 export default function Card({ item }) {
     return (
@@ -14,7 +14,7 @@ export default function Card({ item }) {
                 <h2 className='text-[#181A2A] font-semibold text-2xl leading-7'>{item.title}</h2>
                 <div className='w-full flex items-center justify-between'>
                     <Link href={`/author/${item.user.name}`} className='flex items-center gap-3'>
-                        <img src={`${item.user.img}`} alt="" className='w-[36px] h-[36px] rounded-full' />
+                        <img src={`${item.user.img}`} alt={`card ${item.id}`} className='w-[36px] h-[36px] rounded-full' />
                         <h4>{item.user.name}</h4>
                     </Link>
                     <h4>{item.user.date}</h4>

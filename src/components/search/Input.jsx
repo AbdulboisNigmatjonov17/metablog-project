@@ -14,7 +14,7 @@ export default function Input({ setData }) {
         const result = CardData.filter((post) =>
             post.title && post.title.toLowerCase().includes(value.toLowerCase())
         );
-        console.log(result)
+        // console.log(result)
         setBlogs(result)
         setData(result);
     };

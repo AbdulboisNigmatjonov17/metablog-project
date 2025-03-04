@@ -2,7 +2,7 @@ import Ads from '@/components/ads/Ads'
 import Banner from '@/components/banner/Banner'
 import Button from '@/components/btn/Button'
 import Cards from '@/components/cards/Cards'
-import React from 'react'
+ 
 
 export default function Home() {
   return (

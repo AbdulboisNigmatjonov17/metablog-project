@@ -1,4 +1,4 @@
-import React from 'react'
+ 
 import { CardData } from '../../../helpers/CardData'
 import Card from './Card'
 
