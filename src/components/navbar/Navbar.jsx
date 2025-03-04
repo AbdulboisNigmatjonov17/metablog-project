@@ -9,7 +9,10 @@ export default function Navbar({ setData }) {
         <header className='h-[10dvh] items-center w-full flex justify-between'>
             <div>
                 <Link href={'/'}>
-                    <img src="/Logo.svg" alt="metablog-Logo" />
+                {
+                    theme === "dark" ? <img src="/LogoDark.svg" alt="metablog-Logo" /> : <img src="/Logo.svg" alt="metablog-darkLogo" /> 
+                }
+                    
                 </Link>
             </div>
             <ul className='flex gap-10'>

@@ -3,11 +3,22 @@ import { createContext, useContext, useState, useEffect } from "react";
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState("light"); // Boshlang‘ich qiymat sifatida "light"
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
-    document.body.className = theme; // Body'ga class qo‘shiladi
+    if (typeof window !== "undefined") {
+      const storedTheme = localStorage.getItem("theme");
+      if (storedTheme) {
+        setTheme(storedTheme);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("theme", theme);
+      document.body.className = theme;
+    }
   }, [theme]);
 
   const toggleTheme = () => {

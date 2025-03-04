@@ -25,12 +25,12 @@ body {
 
 body.light {
   background-color: white;
-  color: black;
+  /* color: black; */
   transition: 0.3s;
 }
 
 body.dark {
-  background-color: black;
+  background-color: #181A2A;
   color: white;
   transition: 0.3s;
 }

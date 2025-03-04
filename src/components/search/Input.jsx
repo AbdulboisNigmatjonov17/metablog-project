@@ -2,17 +2,20 @@
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 import { CardData } from '../../../helpers/CardData';
+import { useBlogs } from '@/store/blogs';
 
 export default function Input({ setData }) {
+    const {setBlogs} = useBlogs()
     const [input, setInput] = useState("");
 
     const fetchData = (value) => {
-        if (!value) return setData([]); // Input bo‘sh bo‘lsa, natijalarni tozalash
+        if (!value) return setData([]);
 
         const result = CardData.filter((post) =>
             post.title && post.title.toLowerCase().includes(value.toLowerCase())
-        );            
-        log
+        );
+        console.log(result)
+        setBlogs(result)
         setData(result);
     };
 
