@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 100);
 
     return () => clearTimeout(timer);
   }, [pathname]);

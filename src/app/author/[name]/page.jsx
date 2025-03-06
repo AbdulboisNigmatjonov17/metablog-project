@@ -7,13 +7,15 @@ import { useEffect, useState } from "react";
 
 export default function AuthorPage({ params }) {
     const [param, setParam] = useState('')
-    const post = CardData.find((item) => item.user?.name === param);
+    const post = CardData.find((item) => item.user.name == param);
     const { theme } = useTheme()
 
     useEffect(() => {
         const getParams = async () => {
             const param = await Promise.resolve(params)
-            setParam(param.id)
+            const str = param.name.split('%')
+            const total = str[0] + " " + str[1].slice(2)
+            setParam(total)
         }
         getParams()
     }, [])
