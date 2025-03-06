@@ -1,10 +1,25 @@
+"use client"
 import Link from "next/link";
 import { CardData } from "../../../../helpers/CardData";
 import Text2 from "@/components/text/Text2";
+import Ads from "@/components/ads/Ads";
+import { useTheme } from "@/context/ThemeContext";
+import { useEffect, useState } from "react";
 
 export default function Post({ params }) {
-    const id = params?.id ? decodeURIComponent(params.id) : "";
-    const post = CardData.find((item) => String(item.id) === String(id));
+    const [param, setParam] = useState('')
+    const { theme } = useTheme()
+    
+    useEffect(() => {
+        const getParams = async () => {
+            const param = await Promise.resolve(params)
+            setParam(param.id)
+        }
+        getParams()
+    }, [])
+    const post = CardData.find((item) => String(item.id) === String(param));
+
+
 
     if (!post)
         return (
@@ -14,17 +29,32 @@ export default function Post({ params }) {
         );
 
     return (
-        <section className="p-6 w-full mx-auto bg-white shadow-md rounded-lg">
+        <section className="p-6 w-[800px] rounded-lg mt-25 flex flex-col gap-8 mx-auto ">
             <div className="w-full flex justify-start">
                 <Text2 style={'bg-[#4B6BFB] text-white'} />
             </div>
-            <h1>{post.title}</h1>
-            <Link href={`/author/${post.user.name}`} className="w-full flex items-end justify-between">
-                <img src={post.user.img} alt={post.user.name} className="w-24 h-24 rounded-full mx-auto" />
-                <h2 className="text-2xl font-bold text-center mt-3">{post.user.name}</h2>
-                <p className="text-gray-500 text-center">{post.user.date}</p>
+            <h1 className="text-4xl font-semibold">{post.title}</h1>
+            <Link href={`/author/${post.user.name}`} className="w-full flex items-center gap-3 text-[#696A75]">
+                <img src={post.user.img} alt={post.user.name} className="w-7 h-7 rounded-full" />
+                <h2 className=" ">{post.user.name}</h2>
+                <p className="">{post.user.date}</p>
             </Link>
-            <p className="mt-4 text-gray-700">{post.user.about.text}</p>
+            <img src={`${post.img}`} alt={`post ${post.title}`} className="rounded-xl h-[460px] object-cover w-full" />
+            <div className="flex flex-col gap-2.5">
+                <p className="">{post.description.firstPart.text}</p>
+                <p className="">{post.description.secondPart.text}</p>
+            </div>
+            <h3 className="font-semibold text-2xl">Research Your Destination</h3>
+            <div>
+                <p className="">{post.description.thirdPart.text}</p>
+                <p className="">{post.description.fourthPart.text}</p>
+            </div>
+            <h3 className="font-semibold text-2xl">Plan Your Itinerary</h3>
+            <p className="">{post.description.fifthPart.text}</p>
+            <div className={`${theme === 'dark' ? 'bg-[#242535]' : 'bg-[#F6F6F7]'} border-l-[4px] p-8 rounded-xl border-[#E8E8EA]`}>
+                <h3 className="font-normal italic text-2xl">{post.description.motivition}</h3>
+            </div>
+            <Ads />
         </section>
     );
 }

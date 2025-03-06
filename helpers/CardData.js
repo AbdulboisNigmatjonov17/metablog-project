@@ -2,7 +2,7 @@ export const CardData = [
     {
         id: 1,
         img: 'https://s3-alpha-sig.figma.com/img/3abf/26dd/585632b9d05dcfd0daffacedd55842f5?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jCJDiS~3McANcm-z9-OCZpT36f0u09qhnlDNSn7DgkT71iPP65VVeBwFP4gJRqvZ1yAtxFwvDnGToFjSiCbiglFiFZxuHiZreJaYPqkTUufaW4zdsvE1Gb-Y3N3TXLr6tyWnLeIaJJalJOYPZKIqxHohhtdAyXQYSN6bbWkcfVrd0eYjNKKbhRAD6Mn3MW0N2xHUBWg~jZXuH0PAJe1aw55s-cg2SnC8d41hZtrNDWYJaMJTiY~5pb5y6rQ44-BVSo9DFNdNVYoUvzZY-aRkBSSMZ5so3Ca7B80hI7hoGeteJQe1P4-No9nzIh4BxRmQE2LBNa840H1-IRoDgc02eQ__',
-        title: 'The Future of Artificial Intelligence in Everyday Life',
+        title: 'The Future of Artificial Intelligence in Everyday Life ',
         user: {
             name: 'Michael Adams',
             img: 'https://s3-alpha-sig.figma.com/img/40b7/c131/faedfd7f834c47ba118f3895ffc519cd?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TT9bJ5laH4v4xC~uPBm4crZhGixM4OJjSa7C-l45P36bMCqod8yP-5UWbY1Ti7pe6HLyFOJ6r7PxbnMb9YwgMyBHKKtR0KlFSpINasbYkGA8o0qDimpl7vt-dp1X0xEUBwLRItza1k4u4yy0qA17QwoQHGubijoyKNRL6K4fv~IrEw4A4q-mbR~pBuR6Ot3gpxAxpNbI-P7PHsm1zWBcJzVqMrYO63fx~~Hze9X4d7xmwZLYJ9QApCDltNugJ-9mkNOerXVxD5rOHhC9JT8z5z3WoNf4b2N2Syj-l9U2UZjf0ED0XXDgzFDLm2nevZgQ29vuSLCwaVKwZV-F4B3tBA__',

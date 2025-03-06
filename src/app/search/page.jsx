@@ -7,7 +7,7 @@ export default function SearchCards() {
   const { blogs } = useBlogs()
   console.log(blogs)
   return (
-    <div className='w-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2'>
+    <div className='w-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-25 gap-5'>
       {blogs.map((item) => (
         <Card key={item.id} item={item} />
       ))}

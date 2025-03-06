@@ -6,7 +6,8 @@ import { useTheme } from '@/context/ThemeContext';
 export default function Navbar({ setData }) {
     const { theme, toggleTheme } = useTheme();
     return (
-        <header className='h-[10dvh] items-center w-full flex justify-between'>
+        <nav className={`h-[10dvh] fixed top-0 z-50 items-center w-[1280px] flex justify-between 
+            ${theme === 'dark' ? 'bg-[#181A2A]' : 'bg-white'}`}>
             <div>
                 <Link href={'/'}>
                     {
@@ -30,6 +31,6 @@ export default function Navbar({ setData }) {
                     <img src="/Swich.png" alt="swith-mode" className={`toggle-circle ${theme === "dark" ? "dark" : ""}`} />
                 </button>
             </div>
-        </header>
+        </nav >
     )
 }

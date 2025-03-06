@@ -12,8 +12,8 @@ export default function BlogBanner() {
 
     return (
         <section>
-            <div className='w-full flex flex-col items-center text-center my-10'>
-                <h2 className='font-semibold text-3xl leading-9 text-[#181A2A]'>Page TItle</h2>
+            <div className='w-full flex flex-col items-center text-center mt-25 mb-10'>
+                <h2 className='font-semibold text-3xl leading-9'>Page TItle</h2>
                 <div className='flex gap-3'>
                     <h4>Home</h4>
                     <h4 className='text-[#E8E8EA]'>|</h4>

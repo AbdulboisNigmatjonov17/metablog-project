@@ -1,9 +1,22 @@
+"use client"
 import Cards from "@/components/cards/Cards";
 import { CardData } from "../../../../helpers/CardData";
+import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
+import { useTheme } from "@/context/ThemeContext";
+import { useEffect, useState } from "react";
 
 export default function AuthorPage({ params }) {
-    const name = params?.name ? decodeURIComponent(params.name) : "";
-    const post = CardData.find((item) => item.user?.name === name);
+    const [param, setParam] = useState('')
+    const post = CardData.find((item) => item.user?.name === param);
+    const { theme } = useTheme()
+
+    useEffect(() => {
+        const getParams = async () => {
+            const param = await Promise.resolve(params)
+            setParam(param.id)
+        }
+        getParams()
+    }, [])
 
     if (!post)
         return (
@@ -13,14 +26,32 @@ export default function AuthorPage({ params }) {
         );
 
     return (
-        <section className="">
-            <div>
-                <img src={post.user.img} alt={post.user.name} className="w-24 h-24 rounded-full mx-auto" />
-                <h2 className="text-2xl font-bold text-center mt-3">{post.user.name}</h2>
-                <p className="text-gray-500 text-center">{post.user.about.job}</p>
-                <p className="mt-4 text-gray-700">{post.user.about.text}</p>
+        <section className="mt-25 flex flex-col items-center">
+            <div className={`${theme === 'dark' ? 'bg-[#242535]' : 'bg-[#F6F6F7]'} w-full p-12 rounded-xl flex flex-col items-center`}>
+                <div className="flex justify-center items-center gap-3 text-left">
+                    <img src={post.user.img} alt={post.user.name} className="w-24 h-24 rounded-full" />
+                    <div>
+                        <h2 className="text-2xl font-bold mt-3">{post.user.name}</h2>
+                        <p className="text-gray-500">{post.user.about.job}</p>
+                    </div>
+                </div>
+                <p className="max-w-[670px] my-4 text-gray-700 text-center">{post.user.about.text}</p>
+                <div className="text-white flex justify-center gap-2">
+                    <div className="bg-[#696A75] p-2 rounded-md">
+                        <Facebook className="block transition hover:scale-125 cursor-pointer duration-700 ease-in-out " />
+                    </div>
+                    <div className="bg-[#696A75] p-2 rounded-md">
+                        <Twitter className="transition  hover:scale-125 cursor-pointer duration-700 ease-in-out " />
+                    </div>
+                    <div className="bg-[#696A75] p-2 rounded-md">
+                        <Instagram className="transition  hover:scale-125 cursor-pointer duration-700 ease-in-out " />
+                    </div>
+                    <div className="bg-[#696A75] p-2 rounded-md">
+                        <YouTube className="transition  hover:scale-125 cursor-pointer duration-700 ease-in-out " />
+                    </div>
+                </div>
             </div>
-            <h3 className='text-[#181A2A] font-bold text-2xl leading-7'>Latest Post</h3>
+            <h3 className='text-[#181A2A] font-bold text-2xl leading-7 mt-5'>Latest Post</h3>
             <div >
                 <Cards />
             </div>
