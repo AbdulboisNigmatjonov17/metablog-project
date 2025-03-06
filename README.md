@@ -1,6 +1,5 @@
-<h1 align="center">Hi 👋, I'm <a href="https://100rabhcsmc.github.io/Me.io/" target="blank">
-Abdulbois</a></h1>
-<h3 align="center">This is a MetaBlog project &#127470;&#127475</h3>
+<h1 align="center">About this Project</h1>
+<h2 align="center">This is a <a href='https://metablog-project.vercel.app/'>MetaBlog project</a></h3>
 
 <a target="_blank" align="center">
   <img align="right" top="500" height="300" width="400" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
