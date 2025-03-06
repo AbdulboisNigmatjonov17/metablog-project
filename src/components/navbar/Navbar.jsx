@@ -22,10 +22,8 @@ export default function Navbar({ setData }) {
         <nav className={`fixed top-0 z-50 lg:w-full max-w-[1280px] w-full h-[10dvh] flex items-center justify-between px-10
             ${theme === "dark" ? "bg-[#181A2A] text-white" : "bg-white text-black"}`}>
 
-            {/* Left side - Logo */}
             <Logo />
 
-            {/* Desktop Nav Links */}
             <ul className="hidden lg:flex gap-10">
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/blog">Blog</Link></li>
@@ -34,15 +32,12 @@ export default function Navbar({ setData }) {
                 <li>Contact</li>
             </ul>
 
-            {/* Right side - Search & Theme Switch */}
-            <button onClick={handleOpenSearch} className="flex gap-10 items-center">
-                <Link href="/search">
-                    <Search setData={setData} />
-                </Link>
-            </button>
-            <button onClick={toggleTheme} className="sm:hidden block toggle-btn cursor-pointer">
-                <Image width={24} height={24} src="/Swich.png" alt="switch-mode" className={`toggle-circle ${theme === "dark" ? "dark" : ""}`} />
-            </button>
+            <div className="hidden md:flex gap-5 ">
+                <Search setData={setData} />
+                <button onClick={toggleTheme} className="toggle-btn cursor-pointer">
+                    <Image width={24} height={24} src="/Swich.png" alt="switch-mode" className={`toggle-circle ${theme === "dark" ? "dark" : ""}`} />
+                </button>
+            </div>
 
             <div className="lg:hidden flex">
                 <IconButton onClick={() => setOpen(true)}>

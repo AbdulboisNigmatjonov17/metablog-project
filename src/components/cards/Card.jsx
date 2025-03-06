@@ -7,7 +7,7 @@ import Text2 from '../text/Text2'
 
 export default function Card({ item }) {
     return (
-        <div className='lg:max-w-[390px] w-full h-[450px] border border-[#E8E8EA] rounded-xl flex flex-col gap-4 items-center p-4 justify-between'>
+        <div className='lg:max-w-[390px] w-full min-h-[450px] border border-[#E8E8EA] rounded-xl flex flex-col gap-4 items-center p-4 justify-between'>
             <Link href={`/post/${item.id}`} className='w-full'>
                 <div className='w-full overflow-hidden'>
                     <img
@@ -19,7 +19,7 @@ export default function Card({ item }) {
                     />
                 </div>
             </Link>
-            <div className='w-full h-full flex flex-col justify-between items-start'>
+            <div className='w-full h-full flex flex-col justify-between items-start '>
                 <Text2 style={'text-[#4B6BFB] bg-[#4B6BFB0D]'} />
                 <h2 className={' font-semibold text-2xl leading-7'}>{item.title}</h2>
                 <div className='w-full flex items-center justify-between'>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { CardData } from '../../../helpers/CardData';
 import { useBlogs } from '@/store/blogs';
 import { useTheme } from '@/context/ThemeContext';
+import Link from 'next/link';
 
 export default function Input({ setData }) {
     const { setBlogs } = useBlogs()
@@ -26,9 +27,9 @@ export default function Input({ setData }) {
     };
 
     return (
-        <form className={`${theme === 'dark' ? 'bg-[#242535]' : 'bg-[#F4F4F5]'} flex p-2 rounded-[5px]`}>
+        <Link href={'/search'} className={`${theme === 'dark' ? 'bg-[#242535]' : 'bg-[#F4F4F5]'} flex p-2 rounded-[5px]`}>
             <input type="text" placeholder='Search' className='outline-none' value={input} onChange={handleChange} />
             <SearchIcon />
-        </form>
+        </Link>
     );
 }
