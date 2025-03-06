@@ -14,9 +14,8 @@ export default function () {
     const { theme } = useTheme()
     return (
         <div className='w-full relative mt-25 mb-20'>
-            {/* <Image className='w-full lg:h-[600px] h-[400px] object-cover rounded-xl' width={1200} height={600} src="/Banner.png" alt="banner-img" /> */}
             <Image
-                className="w-full lg:h-[600px] h-[400px] object-cover rounded-xl"
+                className="w-full object-cover rounded-xl"
                 width={1200}
                 height={600}
                 src="/Banner.png"
