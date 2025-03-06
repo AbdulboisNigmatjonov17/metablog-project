@@ -24,7 +24,7 @@ export default function () {
             />
             {
                 randomCards.map((item) => (
-                    <div key={item.id} className={`shadow-2xl w-[600px] h-[300px] p-10 flex flex-col gap-6 justify-between rounded-xl absolute left-[50px] -bottom-[50px] ${theme === 'dark' ? 'bg-[#181A2A]' : 'bg-white'}`}>
+                    <div key={item.id} className={`shadow-2xl w-[600px] h-[300px] p-10 lg:flex flex-col gap-6 justify-between rounded-xl hidden absolute left-[50px] -bottom-[50px] ${theme === 'dark' ? 'bg-[#181A2A]' : 'bg-white'}`}>
                         <div className='w-full flex flex-col items-start'>
                             <Text2 style={'bg-[#4B6BFB] text-white'} />
                         </div>

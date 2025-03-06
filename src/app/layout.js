@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <ThemeProvider>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <header className="Container">
+          <header className="w-full lg:w-[1280px] mx-0 lg:mx-auto">
             <Navbar setData={setData} />
           </header>
           {loading ? (

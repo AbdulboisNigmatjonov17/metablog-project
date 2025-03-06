@@ -4,6 +4,7 @@ import { CardData } from "../../../../helpers/CardData";
 import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 import { useTheme } from "@/context/ThemeContext";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function AuthorPage({ params }) {
     const [param, setParam] = useState('')
@@ -31,7 +32,7 @@ export default function AuthorPage({ params }) {
         <section className="mt-25 flex flex-col items-center">
             <div className={`${theme === 'dark' ? 'bg-[#242535]' : 'bg-[#F6F6F7]'} w-full p-12 rounded-xl flex flex-col items-center`}>
                 <div className="flex justify-center items-center gap-3 text-left">
-                    <img src={post.user.img} alt={post.user.name} className="w-24 h-24 rounded-full" />
+                    <Image src={post.user.img} alt={post.user.name} width={64} height={64} className="rounded-full" />
                     <div>
                         <h2 className="text-2xl font-bold mt-3">{post.user.name}</h2>
                         <p className="text-gray-500">{post.user.about.job}</p>

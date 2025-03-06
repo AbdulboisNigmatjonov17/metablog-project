@@ -39,6 +39,12 @@ body.dark {
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .Container {
+    margin: 0 20px;
+  }
+}
+
 .toggle-btn {
   width: 60px;
   height: 30px;

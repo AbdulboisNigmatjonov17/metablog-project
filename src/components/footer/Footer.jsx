@@ -38,7 +38,7 @@ export default function Footer() {
                         <li>Sports</li>
                     </ul>
                 </div>
-                <div className={`${theme === 'dark' ? 'bg-[#242535]' : 'bg-white'} w-[390px] flex flex-col justify-center p-8 gap-3 text-center`}>
+                <div className={`${theme === 'dark' ? 'bg-[#242535]' : 'bg-white'} lg:w-[390px] flex flex-col justify-center p-8 gap-3 text-center`}>
                     <h3 className="text-xl font-semibold">Weekly Newsletter</h3>
                     <p className="text-[#696A75]">Get blog articles and offers via email</p>
                     <form className={`outline-1 outline-[#DCDDDF] flex justify-between py-3 px-4 text-[#97989F] rounded-md ${theme === 'dark' ? 'bg-[#181A2A]' : 'bg-white'}`}>
@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
             </div>
             <hr className="my-10" />
-            <div className="Container w-full flex justify-between">
+            <div className="Container w-full flex justify-between flex-wrap">
                 <Logo />
                 <div className="flex gap-5 items-center">
                     <p className="text-gray-600">Terms of Use</p>
