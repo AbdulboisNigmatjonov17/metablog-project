@@ -6,12 +6,14 @@
 </a>
 <h3>In this project what we use?</h3>
 
-- Next Js <a href="https://nextjs.org/" target="blank">next js</a>
+- Next Js (<a href="https://nextjs.org/" target="blank">next js</a>)
 
-- react-spinners <a href='https://www.npmjs.com/package/react-spinners'>react-spinners</a>
+- react-spinners (<a href='https://www.npmjs.com/package/react-spinners'>react-spinners</a>)
 
-- zustand <a href='https://zustand-demo.pmnd.rs/'>zustand</a>
+- zustand (<a href='https://zustand-demo.pmnd.rs/'>zustand</a>)
 
--  Material Ui <a href="https://mui.com/" target="blank">mui</a>
+-  Material Ui (<a href="https://mui.com/" target="blank">mui</a>)
 
-Last Edited on: 08/08/2025
+<h3>Project description:</h3>
+
+<p>This project is a blog site where people mainly blog and you can also see about those people.</p>
