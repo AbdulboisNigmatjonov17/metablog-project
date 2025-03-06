@@ -1,11 +1,11 @@
 export const CardData = [
     {
         id: 1,
-        img: 'https://s3-alpha-sig.figma.com/img/3abf/26dd/585632b9d05dcfd0daffacedd55842f5?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jCJDiS~3McANcm-z9-OCZpT36f0u09qhnlDNSn7DgkT71iPP65VVeBwFP4gJRqvZ1yAtxFwvDnGToFjSiCbiglFiFZxuHiZreJaYPqkTUufaW4zdsvE1Gb-Y3N3TXLr6tyWnLeIaJJalJOYPZKIqxHohhtdAyXQYSN6bbWkcfVrd0eYjNKKbhRAD6Mn3MW0N2xHUBWg~jZXuH0PAJe1aw55s-cg2SnC8d41hZtrNDWYJaMJTiY~5pb5y6rQ44-BVSo9DFNdNVYoUvzZY-aRkBSSMZ5so3Ca7B80hI7hoGeteJQe1P4-No9nzIh4BxRmQE2LBNa840H1-IRoDgc02eQ__',
+        img: '/blog-images/FirstBlogImg.png',
         title: 'The Future of Artificial Intelligence in Everyday Life ',
         user: {
             name: 'Michael Adams',
-            img: 'https://s3-alpha-sig.figma.com/img/40b7/c131/faedfd7f834c47ba118f3895ffc519cd?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TT9bJ5laH4v4xC~uPBm4crZhGixM4OJjSa7C-l45P36bMCqod8yP-5UWbY1Ti7pe6HLyFOJ6r7PxbnMb9YwgMyBHKKtR0KlFSpINasbYkGA8o0qDimpl7vt-dp1X0xEUBwLRItza1k4u4yy0qA17QwoQHGubijoyKNRL6K4fv~IrEw4A4q-mbR~pBuR6Ot3gpxAxpNbI-P7PHsm1zWBcJzVqMrYO63fx~~Hze9X4d7xmwZLYJ9QApCDltNugJ-9mkNOerXVxD5rOHhC9JT8z5z3WoNf4b2N2Syj-l9U2UZjf0ED0XXDgzFDLm2nevZgQ29vuSLCwaVKwZV-F4B3tBA__',
+            img: '/user-images/FirstUserImg.png',
             date: 'January 12, 2023',
             about: {
                 job: 'AI Researcher',
@@ -37,11 +37,11 @@ export const CardData = [
     },
     {
         id: 2,
-        img: 'https://s3-alpha-sig.figma.com/img/7465/4a8f/67369b797c8fb2e96a533fd515fb2939?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S3OY0UfvPpZf-us9lh~kE9SI~HwXNyyks1dVvTejgQ7OIu3NZUU9QcbVOawyjqtTvh2W8H8fNsw1qvuzcmbUITC~80GfMkhOkyAdN9MZsKPaXRfv7udk5cenHLutoAGJJ4S5vyn5My89S7qoOOSv19UJeV2usD3Q6g106G5d-9sitJyBvMBu9qSGdkm7t0F8ozmoDD4Ku1nafAK3poMyTvWZBxhjYgwSAN~yoHYkLMW9ymolnKZcacrXFBnpsDB0-UxLW6M-w8tgbhep0gQ~es2AbwUsrfxzEZ70SomN3JfIlPE-8ROjMLvS5XCLGtqmTihAGF2lPuqzPDzZd2A-KA__',
+        img: '/blog-images/SecondBlogImg.png',
         title: 'Exploring Space: The Next Frontier of Human Civilization',
         user: {
             name: 'James Anderson',
-            img: 'https://s3-alpha-sig.figma.com/img/f952/fa47/9a54dc57c3bfdd71f8ab78628ef9ac9a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=P91D462C0zvJvFcwUK4OkTDj6EE~iAYvp7CSOspHzxaph1vsdqbAYKyKRHl5uAUmc8TqethR67V~1nVbp2VEPIvNx9TajyzBzTXJjohxsCvSJx4fnHOmHSXzWcJRee~x6Ho0ENYSTZ1Tz20eQSsyoHJr6xGnBs1yrgTynQ9AH9B1rx2b9tqm-U53bA28Z1RyBuYVtI4RDv1U5FYuHRf2OSj5ASDoESW~Bc7Dx4ExJEdd3r85OZlrM6KvH4pNbml4oGiRtqhmO5oGDZ0PjERc1lIw1QcwzzBg5R9X1NLuQhMYF2cxysHxaxCIHh9q3Zo6M1ldFEdijdKaIqi~RcNdBw__',
+            img: '/user-images/SecondUserImg.png',
             date: 'March 8, 2023',
             about: {
                 job: 'Astrophysicist',
@@ -73,11 +73,11 @@ export const CardData = [
     },
     {
         id: 3,
-        img: 'https://s3-alpha-sig.figma.com/img/3969/1462/48009e641f454298f62e13de84ac0a09?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=pi~A5ahMwyhcIyGsrUCDagxC3V46KKADnehaA9Rjlkl8KxecZVXXKTaCqygFkblJmiSHY50z0Ta~8AnJ5l1NZrlv~fgCPfkX5Mch~Lsdu-QiyRPhbTUxw-Y5Mvh6HTr9RhmV0akIyfzxX6ugUDk89Avqz-8dHxezWzVkeFbQ7ajnqorrt~gDAcD8pOOCn8-VHjPwFFyELbl7~lVDEwJ8cTEtSjqbGid01-NOJ3h7-eefKNiBhp8E5LLJ4fuzMFULl6OSCZI018LLSXyfDCIdVzUBHO1mpJ6uBjk4qdRbey5qgyxb09iG6OZNy2tPmGftH6c6y~Pu~rXsMO02HarhVw__',
+        img: '/blog-images/ThirdBlogImg.png',
         title: 'The Role of Nutrition in Mental Health',
         user: {
             name: 'Sophia Lee',
-            img: 'https://s3-alpha-sig.figma.com/img/db37/dd67/9040be5d5b5b374674cba3ba9bae96c7?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K3UTbJWP7wMHeCHklEx7rFRbx19fjYhhfHvGgiQqfXh6VuYpcFcU5UApCHRj3yQhU-7CexiIkJpBpjnrYtHheLf2NDJvpGBhPuHZ65EnC1MCA-KwnXPjxeOPPWPDXPmNyzkYawK~3RLrKYX6ri2O7skUSn~JCJoatrRW6OUoXwGiTsE1bwrqyIr57CR5qBp-FNcjtPfuFlmOcHqi6FO2l39Zk1dbV8FA~Hfg0jRHxBDQ-jFvGvIO9NymuBcS0Bz~Cw-wKyZhHFEBhAo-TH355fibewgQXYlgv6xLyWvqdwSDExGexktSAf8apnQ5wB7YQg7wcbjk75BasSlETObTlw__',
+            img: '/user-images/ThirdUserImg.png',
             date: 'May 15, 2023',
             about: {
                 job: 'Nutritionist',
@@ -109,11 +109,11 @@ export const CardData = [
     },
     {
         id: 4,
-        img: 'https://s3-alpha-sig.figma.com/img/fd32/a56d/d484b871abb15e732abb0a69f2ccd525?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JoNO-2KK1-oyR6Xp4ghV0ebAzsvNc-gBduWVP7MRmQ~0fc9PpzcyLZrp04sQEKLuzuCVG2CFqwE1yYYn0cx7MH0FjBjn5o58m7R4GBPeHuyADsRd66~IEHsd8o65Vb4h4a-iaDIh5IsL0QMCSG7qJLOikHNikk-zg1NMo3Mdxe~oiODUxgS8ZPQNt6nDaGwWoJHpRNeYsNo1QBmT9E500l3MqkZsEcD0j9VRoJMvn7BqbSWB0HclydRucCKArlHQOOuUZhm11s1jJPif5TZvC7nIRL3PZl0KQpJfDFXuhV3zPmSQsJdQIzD6E3S6VGTh6yDLxo8BlnSITrQ5O6CZgA__',
+        img: '/blog-images/FourthBlogImg.png',
         title: 'The Importance of Physical Exercise for a Healthy Life',
         user: {
             name: 'Daniel Carter',
-            img: 'https://s3-alpha-sig.figma.com/img/cdb3/29d9/d185cf9e5357b2ca38597c49da427202?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ryhtJhPRzYB7ov1s3cHiHVfivawGjK5OfL6b2GC~n8reYMEXrDTVdMZvMTGbkcyTp7zmeEjLwYa6dyoogORgcwbfyfou3oNO6bQA4O1pXtJz~4GLICQeWsUDkLOTxvDxfa~SeTdwHI5DzTABYr1KrLG57QpfzSlRMyTBlrQMtxOMdyuKyJvkB~i9bGXHToqLVgTsjCSI6cGdiDdhUweHLxqjcp0v2DLRnDPKuFJETmxhTNo58fu5IAp4yoZN9s6KemCNyw4P-ZHTRzI0x3XEWkCiufVVFqEEhDxSeaLksTCK861bPvEzrqnIgKjgQWTsKCFOOAgSBgwCLxnz6osVyg__',
+            img: '/user-images/FourthUserImg.png',
             date: 'July 4, 2023',
             about: {
                 job: 'Fitness Trainer',
@@ -145,11 +145,11 @@ export const CardData = [
     },
     {
         id: 5,
-        img: 'https://s3-alpha-sig.figma.com/img/348e/c9c1/94d6445161ab63109e6e813699b61984?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BijFbXN2pDVWuwAB1fdrqkiscPZ0EniEK~n~jN5QXPArVDiB0pz2yL7g3~yEOUc2yE0Y4111iZGOkLEa6kArV5xdYVkAhCacC1QC2eqR5EZszEndie97nbgqpo4xzr6cdTzKuCP7UMud33g8Xq2bp5WH9kxnO0Op6hqo7IKZ-lYkEmbNqxxwa2d1sawOtoUMBYtbBRkBapzITCVhuEWbDVns6byrzm30xe9zCIedO2q9XJwyPeaaX7axvrHqfHgvhDhGoEen3SnxYfXNfgWMQm3LbII~GcHnBTEDq2A7CZyjmTz4MhIApB7-D9x2C6SvYSn8XJO1Tzcgy3~OzEap6A__',
+        img: '/blog-images/FifthBlogImg.png',
         title: 'The Evolution of Digital Marketing Strategies',
         user: {
             name: 'John Zazycki',
-            img: 'https://s3-alpha-sig.figma.com/img/bf47/0a91/7fcc05b14bc2fd8af4f1a55d22542875?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jxT4DIgPPAJZP3IqkHZJa5wGc00rq3KAU1gDEvJUK6oBFIIMa8imq56XCNn7FyEta338ynohH88dp0dT9DHO~Y-NvsnVQgj4xTmvROnCCjGt5DkQsV7gWThx~5j3TrAjitmVPRziOre-Sos6s~45N0ZMC6h7XB7iaVKV30MmLLD2OESLpAuFO0sm-F7LIMxRYe1yaMHY5oVJ8THuUGaLEhgdB9VYRR5LoVSSn2uIgqw7fZcrX4TPpUuQIN761atyfLRbEhoiajZJ7ClAB~iN6C05Kg1agsyYE6CYuSva8G9AE4OszVld2Z98hCs8EAcs96CJmEM0WwlWnOuk5yg~Nw__',
+            img: '/user-images/FifthUserImg.png',
             date: 'August 25, 2023',
             about: {
                 job: 'Marketing Expert',
@@ -181,11 +181,11 @@ export const CardData = [
     },
     {
         id: 6,
-        img: 'https://s3-alpha-sig.figma.com/img/e4e4/d40b/dc5bf5a2de00232ed3b7e18eadcbe03a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BWz78dCq44V~O-vmZZh-6NKivwx54v8Afdg2b8f0SHwsP1OB63wIFowsvRAJyBvMlXjDG14smOQCyi6~uYolrWbF9d19tNWiDb0mHyrhF7netSoK2MDJmbUUmrFOz2iHfiU9Oc~-NaLbum04gAa9t6-qVrmI-XUQdg6XrkLLTlkEaj0fPunfgwkccfiwJlHMHstjRszQAbmcnuAv-o~uRvdteNfHGF3odSTTdWoNDxwX0MJeOW6~32AWs3U-m~eRmRvb3~K1AwnR0oJAhwbYDvjYU6O4tMjFBfj0TieuX4~NRHi5Rvfkcw-3x2JMgNgztf6J99yjORMYjMVczamh7g__',
+        img: '/blog-images/SixthBlogImg.png',
         title: 'The Rise of Artificial Intelligence in Everyday Life',
         user: {
             name: 'Michael Adams',
-            img: 'https://s3-alpha-sig.figma.com/img/40b7/c131/faedfd7f834c47ba118f3895ffc519cd?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TT9bJ5laH4v4xC~uPBm4crZhGixM4OJjSa7C-l45P36bMCqod8yP-5UWbY1Ti7pe6HLyFOJ6r7PxbnMb9YwgMyBHKKtR0KlFSpINasbYkGA8o0qDimpl7vt-dp1X0xEUBwLRItza1k4u4yy0qA17QwoQHGubijoyKNRL6K4fv~IrEw4A4q-mbR~pBuR6Ot3gpxAxpNbI-P7PHsm1zWBcJzVqMrYO63fx~~Hze9X4d7xmwZLYJ9QApCDltNugJ-9mkNOerXVxD5rOHhC9JT8z5z3WoNf4b2N2Syj-l9U2UZjf0ED0XXDgzFDLm2nevZgQ29vuSLCwaVKwZV-F4B3tBA__',
+            img: '/user-images/FirstUserImg.png',
             date: 'May 5, 2023',
             about: {
                 job: 'AI Researcher & Writer',
@@ -217,11 +217,11 @@ export const CardData = [
     },
     {
         id: 7,
-        img: 'https://s3-alpha-sig.figma.com/img/3087/05a3/0ba138a3797a763d4510333166532abb?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Sa1n5HoqnUOQV15m6b~yVgXVu7qzongs950TrKRnv-Ng996D-ZNSbDyRbFqMOWEK6PFn71-VF~QVax02aJNgqnc1pGzQYAq2OqduYe4SvHXxmGzd9SC7cIGX1wn4QqSfUI0sOYEFodfXS8Oeb13u9PdqM5n-i3FeS4DlnncGR4NBeWBMMsmBSEbR-~A1pvk0X3xCyikQ21JcsPVyb0As6zSuQyCp8vz5IpeJOu7kIjMliSv33lkG5ItVyYEYSlrN740mk5lAEdceruLNNvj2-qsiSuq~1m2Z9P32yiVqIa1TfdyJ2aiUL9HwW7E5IuIFbKiYNhQFmn4-DsQn7E-hQA__',
+        img: '/blog-images/SeventhBlogImg.png',
         title: 'The Evolution of Renewable Energy: A Sustainable Future',
         user: {
             name: 'James Anderson',
-            img: 'https://s3-alpha-sig.figma.com/img/f952/fa47/9a54dc57c3bfdd71f8ab78628ef9ac9a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=P91D462C0zvJvFcwUK4OkTDj6EE~iAYvp7CSOspHzxaph1vsdqbAYKyKRHl5uAUmc8TqethR67V~1nVbp2VEPIvNx9TajyzBzTXJjohxsCvSJx4fnHOmHSXzWcJRee~x6Ho0ENYSTZ1Tz20eQSsyoHJr6xGnBs1yrgTynQ9AH9B1rx2b9tqm-U53bA28Z1RyBuYVtI4RDv1U5FYuHRf2OSj5ASDoESW~Bc7Dx4ExJEdd3r85OZlrM6KvH4pNbml4oGiRtqhmO5oGDZ0PjERc1lIw1QcwzzBg5R9X1NLuQhMYF2cxysHxaxCIHh9q3Zo6M1ldFEdijdKaIqi~RcNdBw__',
+            img: '/user-images/SecondUserImg.png',
             date: 'September 18, 2022',
             about: {
                 job: 'Environmental Scientist',
@@ -253,11 +253,11 @@ export const CardData = [
     },
     {
         id: 8,
-        img: 'https://s3-alpha-sig.figma.com/img/9cba/0115/47643788a57b79a4aa1d6c6db76208a5?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=svLIBRO-5sjYtOzAf1MMko73v6O~5WlcfBoASLKsWWLx1hTedKfqItWhiJEKy5Dc7goZ7woCaBJwVjJgiJzyky1X3NrlW6jTmRbleCMxn7UqRVKdzYdAvqp1zi9c91PLf4M8uEWDz2nS2rCgsl0R9AZdyTDNRK4QyO0yN19~9Jaqo24U93VFdVp0KzNjlpR7tx7D11T0YwZ0hhhS4ijYBDnznfDA8yahgUzx8dszGtV6Pnoyr5Cezb8WjAX1A72cTTGdDc~DZCbKQSAwR3ftFeY2edHVsDAx770foyrnT0JHIWDSLcyn~rkYBeR2BzpDhxFSo6eM00liDnOMNeWikA__',
+        img: '/blog-images/8thBlogImg.png',
         title: 'The Influence of Social Media on Mental Health',
         user: {
             name: 'Sophia Lee',
-            img: 'https://s3-alpha-sig.figma.com/img/db37/dd67/9040be5d5b5b374674cba3ba9bae96c7?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K3UTbJWP7wMHeCHklEx7rFRbx19fjYhhfHvGgiQqfXh6VuYpcFcU5UApCHRj3yQhU-7CexiIkJpBpjnrYtHheLf2NDJvpGBhPuHZ65EnC1MCA-KwnXPjxeOPPWPDXPmNyzkYawK~3RLrKYX6ri2O7skUSn~JCJoatrRW6OUoXwGiTsE1bwrqyIr57CR5qBp-FNcjtPfuFlmOcHqi6FO2l39Zk1dbV8FA~Hfg0jRHxBDQ-jFvGvIO9NymuBcS0Bz~Cw-wKyZhHFEBhAo-TH355fibewgQXYlgv6xLyWvqdwSDExGexktSAf8apnQ5wB7YQg7wcbjk75BasSlETObTlw__',
+            img: '/user-images/ThirdUserImg.png',
             date: 'March 12, 2023',
             about: {
                 job: 'Psychologist & Author',
@@ -289,11 +289,11 @@ export const CardData = [
     },
     {
         id: 9,
-        img: 'https://s3-alpha-sig.figma.com/img/dbae/ead3/16e4297057a78fcd78323914d00b0bf8?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=toZz4ryA4KRtD3Oy1Zm~WHLtawKckEbjb2DlhiqgPT76yWAbhMmvkLY9~mT9fYDumjf3L9Nh6J8vLZO~UzHMHt9C1AUoTJOM5cmfq-SDVtDHqmwMjctwZ~~Q3OhhKVpiv27PYSYwP59wxwGF7rGMLyjmwEtUcDBQdAI0TCoZ8ljwnPlRjq8prfjN0amNQPqFrMp4bU~MfXpvi8yhvqTDPINK6IXa5N86njvpZeGiSrcbZWBpXLYsYnPLhPnRH-j2li9OrDiVLAjusI9cJBnPTNjH5hg-xZRXU1eJYICcozguNUTsaP8TVjKndXue4MvMD6JOvmA-QuiH4ayRwoSY6g__',
+        img: '/blog-images/NinethBlogImg.png',
         title: 'The Power of Minimalism: Living with Less',
         user: {
             name: 'Daniel Carter',
-            img: 'https://s3-alpha-sig.figma.com/img/cdb3/29d9/d185cf9e5357b2ca38597c49da427202?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ryhtJhPRzYB7ov1s3cHiHVfivawGjK5OfL6b2GC~n8reYMEXrDTVdMZvMTGbkcyTp7zmeEjLwYa6dyoogORgcwbfyfou3oNO6bQA4O1pXtJz~4GLICQeWsUDkLOTxvDxfa~SeTdwHI5DzTABYr1KrLG57QpfzSlRMyTBlrQMtxOMdyuKyJvkB~i9bGXHToqLVgTsjCSI6cGdiDdhUweHLxqjcp0v2DLRnDPKuFJETmxhTNo58fu5IAp4yoZN9s6KemCNyw4P-ZHTRzI0x3XEWkCiufVVFqEEhDxSeaLksTCK861bPvEzrqnIgKjgQWTsKCFOOAgSBgwCLxnz6osVyg__',
+            img: '/user-images/FourthUserImg.png',
             date: 'June 30, 2023',
             about: {
                 job: 'Lifestyle Blogger',
