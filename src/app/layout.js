@@ -7,6 +7,7 @@ import { ThemeProvider } from "../context/ThemeContext";
 import { ClipLoader } from "react-spinners";
 import { usePathname } from "next/navigation";
 import Footer from "@/components/footer/Footer";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,7 @@ export default function RootLayout({ children }) {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 100);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, [pathname]);
@@ -43,6 +44,12 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <Head>
+        <title>My MetaBlog Website</title>
+        <meta name="description" content="This is a MetaBlog website built with Next.js." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="UTF-8" />
+      </Head>
       <ThemeProvider>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <header className="w-full lg:w-[1280px] mx-0 lg:mx-auto">
