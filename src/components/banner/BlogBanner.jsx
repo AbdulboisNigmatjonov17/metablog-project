@@ -4,7 +4,6 @@ import Text2 from '../text/Text2';
 import Link from 'next/link';
 
 export default function BlogBanner() {
-    const img = 'https://s3-alpha-sig.figma.com/img/eb4f/aad2/4394e91108e011b0d07581596959713b?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UD9DIcFnoU6CVzcg7snWGs60I7LWYzSZN0~VK7x2POagsLQJwLSoy2jpyxGk45Ak6n0DHlcHU16fQjSmzYDVfpU6Htn-zfaLDxmOFYoJ~bVx8sUP-reqqnyt3uq6BakoiwCkZxdt52K87KiN67QJkZGlO8MHdFktTJ2quoiJqw1ikglOmIt3VLSVyDz0BXcb64sLtm8GWlajWudfabIwA60urDavuF2tCz3Px4ds3qIVfkrR7x-SOZblJVRvh7vdAyoa6aMTX1MDVIHc665~I3Sl3B5C9MIXJGKxD36blH6WvcYeW3-Hvfp57KhyoCD9nr5DkLb~XJJAoF89kixfWA__'
     const randomCards = useMemo(() => {
         const shuffled = CardData.sort(() => 0.5 - Math.random());
         return shuffled.slice(0, 1);
@@ -20,7 +19,7 @@ export default function BlogBanner() {
                     <h4>Link One</h4>
                 </div>
             </div>
-            <div style={{ backgroundImage: `url(${img})`}} className='w-full h-[450px] bg-cover flex items-end rounded-xl'>
+            <div style={{ backgroundImage: 'url(/Banner.png)'}} className='w-full h-[450px] bg-cover flex items-end rounded-xl'>
                 {
                     randomCards.map((item) => (
                         <div key={item.id} className='w-[600px] h-[300px] p-10 flex flex-col gap-6 justify-between rounded-xl text-white'>
