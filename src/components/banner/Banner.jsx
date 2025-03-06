@@ -20,6 +20,7 @@ export default function () {
                 height={600}
                 src="/Banner.png"
                 alt="banner-img"
+                quality={75}
                 priority
             />
             {
