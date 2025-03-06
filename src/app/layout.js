@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "../context/ThemeContext";
 import { ClipLoader } from "react-spinners";
 import { usePathname } from "next/navigation";
+import Footer from "@/components/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,9 +45,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <ThemeProvider>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <nav className="Container">
+          <header className="Container">
             <Navbar setData={setData} />
-          </nav>
+          </header>
           {loading ? (
             <div className="loader-container">
               <ClipLoader size={50} color="#3498db" />
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
               )}
             </main>
           )}
+          <Footer />
         </body>
       </ThemeProvider>
     </html>

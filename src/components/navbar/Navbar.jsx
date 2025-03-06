@@ -2,20 +2,14 @@
 import Link from 'next/link'
 import Search from '../search/Input'
 import { useTheme } from '@/context/ThemeContext';
+import Logo from '../logo/Logo';
 
 export default function Navbar({ setData }) {
     const { theme, toggleTheme } = useTheme();
     return (
         <nav className={`h-[10dvh] fixed top-0 z-50 items-center w-[1280px] flex justify-between 
             ${theme === 'dark' ? 'bg-[#181A2A]' : 'bg-white'}`}>
-            <div>
-                <Link href={'/'}>
-                    {
-                        theme === "dark" ? <img src="/LogoDark.svg" alt="metablog-Logo" /> : <img src="/Logo.svg" alt="metablog-darkLogo" />
-                    }
-
-                </Link>
-            </div>
+            <Logo />
             <ul className='flex gap-10'>
                 <li><Link href={'/'}>Home</Link></li>
                 <li><Link href={'/blog'}>Blog</Link></li>
