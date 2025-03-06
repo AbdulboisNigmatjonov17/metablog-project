@@ -12,11 +12,6 @@ import Image from "next/image";
 export default function Navbar({ setData }) {
     const { theme, toggleTheme } = useTheme();
     const [open, setOpen] = useState(false);
-    const [searchOpen, setSearchOpen] = useState()
-
-    const handleOpenSearch = () => {
-        setSearchOpen(!searchOpen);
-    };
 
     return (
         <nav className={`fixed top-0 z-50 lg:w-full max-w-[1280px] w-full h-[10dvh] flex items-center justify-between px-10
